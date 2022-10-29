@@ -8,7 +8,6 @@ import FavouriteCharacter from '../Components/FavouriteCharacter'
 function StudioGhibliContainer() {
     const [characters, setCharacters] = useState([]);
     const [character, setCharacter] = useState([]);
-    const [favCharacter, setFavCharacter] = useState([]);
 
     async function fetchCharacters(){
         const response = await fetch('https://ghibliapi.herokuapp.com/people');
@@ -24,13 +23,6 @@ function StudioGhibliContainer() {
         return characters.find((character) => character.id === id)
     };
 
-    // function addCharacterToFavourites(oldCharacter) {
-    //     const newCharacter = {...oldCharacter, isFavourite: true};
-    //     const newCharacters = [...characters];
-    //     const index = newCharacters.indexOf(oldCharacter);
-    //     newCharacters.splice(index, 1, newCharacter);
-    //     setCharacters(newCharacters);
-    // };
 
     const handleFavourite = (id) => {
         const updatedCharacters = characters.map((character) => {
@@ -40,8 +32,9 @@ function StudioGhibliContainer() {
         })
         setCharacters(updatedCharacters)
     };
-
     
+   
+
     return (
         <>
             <Heading text="Studio Ghibli Characters Website"/>
@@ -51,7 +44,7 @@ function StudioGhibliContainer() {
                 setCharacter(character);
             }}/>
             <CharacterSelect character={character} handleFavourite={handleFavourite}/>
-            <FavouriteCharacter characters={characters} findCharacter={findCharacterById}/>
+            <FavouriteCharacter characters={characters}/>
         </>
     )
 

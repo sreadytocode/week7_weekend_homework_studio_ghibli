@@ -11,7 +11,7 @@ const CharacterSelect = ({character, handleFavourite}) => {
         handleFavourite(character.id)
       }
     
-      const favourite = character.isFavourite ? 'Remove from favourites' : 'Icon'
+      const favourite = character.isFavourite ? 'Remove from favourites' : 'Add to favourites'
 
     return (
         <>

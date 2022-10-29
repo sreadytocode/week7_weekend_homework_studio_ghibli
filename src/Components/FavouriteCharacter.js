@@ -1,19 +1,22 @@
 import React from "react";
-import Button from '../Components/Button';
 
-function FavouriteCharacter({characters, findCharacter}) {
-
+function FavouriteCharacter({characters}) {
+    
+    
     const favouriteCharacters = characters.filter(character => character.isFavourite)
     
+
     return (
         <>
             <h2>Favourite Characters:</h2>
                 <ul>
                     {favouriteCharacters.map(characters => {
                         return (
+                            <>
                             <li key={characters.id}>
-                                <h3>{characters.name}</h3>
+                                <h3>{characters.name} {characters.isFavourite && ""}</h3>
                             </li>
+                            </>
                         )
                     })}
                 </ul>
