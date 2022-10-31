@@ -13,8 +13,8 @@ function FavouriteCharacter({characters}) {
                     {favouriteCharacters.map(characters => {
                         return (
                             <>
-                            <li key={characters.id}>
-                                <h3>{characters.name} {characters.isFavourite && ""}</h3>
+                            <li key={characters.id} >
+                                <h3>{characters.name} {characters.isFavourite && "🐈"}</h3>
                             </li>
                             </>
                         )

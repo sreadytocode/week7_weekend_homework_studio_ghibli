@@ -1,0 +1,6 @@
+.button {
+    background-image: url('../../public/static/cute-totoro.jpeg');
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}

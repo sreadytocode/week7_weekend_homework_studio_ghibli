@@ -4,7 +4,9 @@ import './App.css';
 
 function App() {
   return (
-    <StudioGhibliCharactersContainer/>
+    <div className='main-container'>
+      <StudioGhibliCharactersContainer/>
+    </div>
   );
 }
 

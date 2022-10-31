@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +13,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.main-container {
+  background-image: url('../public/static/IMG-20221030-WA0007.jpg');
+  background-size: cover;
+  color: wheat;
+  font-weight: bold;
+  display: block;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+};
+
 
 .App-header {
   background-color: #282c34;

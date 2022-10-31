@@ -5,6 +5,7 @@ import CharacterSelect from '../Components/CharacterSelect';
 import Button from '../Components/Button'; 
 import FavouriteCharacter from '../Components/FavouriteCharacter'
 
+
 function StudioGhibliContainer() {
     const [characters, setCharacters] = useState([]);
     const [character, setCharacter] = useState([]);
